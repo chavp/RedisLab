@@ -43,13 +43,34 @@ namespace WordStore.Web.Controllers
 
             wordRepo.DeleteById(id);
 
+            TempData["alert"] = new AlertMessage
+            {
+                Type = "alert-success",
+                Message = "Delete successfully.",
+                Title = "Well done!"
+            };
 
             return RedirectToAction("Index");
         }
 
-        public ActionResult Save()
+        [HttpPost]
+        public ActionResult Save(WordViewModels saveVM)
         {
-            return View();
+            var wordRepo = redisClient.As<Word>();
+
+            var target = wordRepo.GetById(saveVM.Id);
+            target.Value = saveVM.Value;
+
+            wordRepo.Store(target);
+
+            TempData["alert"] = new AlertMessage
+            {
+                Type = "alert-success",
+                Message = "Save successfully.",
+                Title = "Well done!"
+            };
+
+            return RedirectToAction("Index");
         }
     }
 }

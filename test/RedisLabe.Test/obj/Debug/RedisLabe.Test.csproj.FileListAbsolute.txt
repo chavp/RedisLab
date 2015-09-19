@@ -1,0 +1,14 @@
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\RedisLabe.Test.dll
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\RedisLabe.Test.pdb
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\RedisModels.dll
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\ServiceStack.Common.dll
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\ServiceStack.Interfaces.dll
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\ServiceStack.Redis.dll
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\ServiceStack.Text.dll
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\RedisModels.pdb
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\ServiceStack.Common.xml
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\ServiceStack.Redis.xml
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\bin\Debug\ServiceStack.Text.xml
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\obj\Debug\RedisLabe.Test.csprojResolveAssemblyReference.cache
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\obj\Debug\RedisLabe.Test.dll
+D:\GithubRepositories\RedisLab\test\RedisLabe.Test\obj\Debug\RedisLabe.Test.pdb

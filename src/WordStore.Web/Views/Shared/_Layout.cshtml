@@ -42,5 +42,23 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    @if (TempData.ContainsKey("alert"))
+    {
+        <script>
+            $('.alert').animate({
+                opacity: 1
+            }, 600, function () {
+                // Animation complete.
+                setTimeout(function () {
+                    $('.alert').parent().animate({
+                        height: 0
+                    }, 2000, function () {
+                        $('.alert').remove();
+                    });
+                }, 3000)
+            });
+        </script>
+    }
 </body>
 </html>

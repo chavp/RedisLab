@@ -9,22 +9,33 @@
 <h2>Words</h2>
 
 <hr />
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_AlertMessage")
+    </div>
+</div>
 
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="col-md-3">
+        <form action="@Url.Action("Save", "Word")" method="post">
+            <div class="col-md-3">
+                <input type="hidden" name="Id" value="@item.Id">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">@item.Id</div>
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <span class="input-group-addon">Value</span>
+                            <input type="text" class="form-control" value="@item.Value" name="Value" />
+                        </div>
+                    </div>
+                    <div class="panel-footer text-right">
+                        <button class="btn btn-primary" type="submit">Save</button>
+                        <a class="btn btn-danger" href="@Url.Action("Delete", "Word", new { id = @item.Id })">Delete</a>
+                    </div>
+                </div>
 
-            <div class="panel panel-primary">
-                <div class="panel-heading">@item.Id</div>
-                <div class="panel-body">
-                    @item.Value
-                </div>
-                <div class="panel-footer text-right">
-                    <a class="btn btn-danger" href="@Url.Action("Delete", "Word", new { id = @item.Id })">Delete</a>
-                </div>
             </div>
-
-        </div>
+        </form>
     }
 </div>
