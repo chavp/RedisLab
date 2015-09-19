@@ -46,7 +46,7 @@ namespace WordStore.Web.Controllers
             TempData["alert"] = new AlertMessage
             {
                 Type = "alert-success",
-                Message = "Delete successfully.",
+                Message = string.Format("Delete Word id {0} successfully.", id),
                 Title = "Well done!"
             };
 
@@ -66,7 +66,7 @@ namespace WordStore.Web.Controllers
             TempData["alert"] = new AlertMessage
             {
                 Type = "alert-success",
-                Message = "Save successfully.",
+                Message = string.Format("Save Word id {0} successfully.", saveVM.Id),
                 Title = "Well done!"
             };
 
