@@ -1,0 +1,30 @@
+﻿@using WordStore.Web.Models
+
+@model List<WordViewModels>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Words</h2>
+
+<hr />
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">@item.Id</div>
+                <div class="panel-body">
+                    @item.Value
+                </div>
+                <div class="panel-footer text-right">
+                    <a class="btn btn-danger" href="@Url.Action("Delete", "Word", new { id = @item.Id })">Delete</a>
+                </div>
+            </div>
+
+        </div>
+    }
+</div>

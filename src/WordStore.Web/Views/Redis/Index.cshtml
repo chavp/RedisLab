@@ -1,0 +1,22 @@
+﻿@using WordStore.Web.Models
+
+@model List<RedisKeyViewModels>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<hr />
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <div class="thumbnail text-center">
+                @item.Key
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisLabe.Test", "test\RedisLabe.Test\RedisLabe.Test.csproj", "{0465D216-DB61-4AD7-BDA7-5A0DF6EF9B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisAgent", "src\RedisAgent\RedisAgent.csproj", "{15CD008E-9A01-4456-8C2C-19A71B0F9A30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisModels", "src\RedisModels\RedisModels.csproj", "{F1053600-4053-4EFC-AD10-93A84F8ED442}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordStore.Web", "src\WordStore.Web\WordStore.Web.csproj", "{FCB0BC17-ECF7-433E-99A5-C08A33FC771D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0465D216-DB61-4AD7-BDA7-5A0DF6EF9B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0465D216-DB61-4AD7-BDA7-5A0DF6EF9B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0465D216-DB61-4AD7-BDA7-5A0DF6EF9B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0465D216-DB61-4AD7-BDA7-5A0DF6EF9B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15CD008E-9A01-4456-8C2C-19A71B0F9A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15CD008E-9A01-4456-8C2C-19A71B0F9A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15CD008E-9A01-4456-8C2C-19A71B0F9A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15CD008E-9A01-4456-8C2C-19A71B0F9A30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1053600-4053-4EFC-AD10-93A84F8ED442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1053600-4053-4EFC-AD10-93A84F8ED442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1053600-4053-4EFC-AD10-93A84F8ED442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1053600-4053-4EFC-AD10-93A84F8ED442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB0BC17-ECF7-433E-99A5-C08A33FC771D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB0BC17-ECF7-433E-99A5-C08A33FC771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB0BC17-ECF7-433E-99A5-C08A33FC771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB0BC17-ECF7-433E-99A5-C08A33FC771D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
